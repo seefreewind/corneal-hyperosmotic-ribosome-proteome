@@ -1,0 +1,19 @@
+item	expected	locations	status
+primary_complete_case_n	3966	Abstract; Results; Discussion; Table2	PASS
+RNA6_rho	0.11348; CI [0.08107,0.14571]	Abstract; Results; Discussion; Cover	PASS
+Ribo6_rho	0.16326; CI [0.13150,0.19493]	Abstract; Results; Discussion; Cover	PASS
+primary_delta	0.04971; CI [0.02377,0.07573]; P=0.0002	Abstract; Results; Discussion; Cover; Table2	PASS
+residual_ribo	0.11059; CI [0.07799,0.14218]; P<1e-4	Abstract; Results; SI	PASS
+partial_ribo	0.11846; CI [0.08684,0.15028]; P<1e-4	Results; SI	PASS
+partial_rna	0.00872; CI [-0.02291,0.03986]; P=0.5706	Results; SI	PASS
+CV_model_A	0.11332	Abstract; Results; Discussion; Cover	PASS
+CV_model_B	0.15260	Abstract; Results; Discussion; Cover	PASS
+CV_delta	0.03928; CI [0.02992,0.04871]; P<1e-4	Abstract; Results; Discussion; Cover; Table2	PASS
+permutation	P=0.0001	Results; SI; Final report	PASS
+block_bootstrap	0.04983; CI [0.02363,0.07216]; P=0.0006	Results; SI; Table2	PASS
+protein_rows	4301	Results; Introduction/SI tables	PASS
+primary_overlap	3974	Results; SI	PASS
+four_dataset_overlap	3950	Results; SI	PASS
+mechanotransduction	P=0.02510; FDR=0.11294; non-confirmatory	Results; Discussion; SI	PASS
+amino_osmolyte	P=0.00730; FDR=0.06569; suggestive only	Results; Discussion; SI	PASS
+abstract_word_count	<=200	Abstract	PASS

@@ -1,0 +1,19 @@
+citation_id	claim	reference	DOI	PMID_or_accession	verified	supports_claim	action
+R1	ribosome profiling measures translation-related footprints	Ingolia et al. 2009, Science 324:218–223	10.1126/science.1168978	PMID 19213877	YES	YES	retain
+R2	overview of ribosome profiling interpretation	Brar & Weissman 2015, Nat Rev Mol Cell Biol 16:651–664	10.1038/nrm4069	PMID 26202592	YES	YES	retain
+R3	genome-wide ribosome footprint profiling	Ingolia 2016, Cell 165:22–33	10.1016/j.cell.2016.02.066	PMID 27015305	YES	YES	retain
+R4	mRNA–protein dependence and buffering	Liu et al. 2016, Cell 165:535–550	10.1016/j.cell.2016.03.014	PMID 27104978	YES	YES	retain
+R5	time-resolved proteomics and protein synthesis dynamics	Liu et al. 2017, Cell Syst 4:636–644.e9	10.1016/j.cels.2017.05.001	PMID 28578850	YES	YES	retain
+R6	osmoadaptive translation and amino-acid regulation	Krokowski et al. 2022, Cell Rep 39:111092	10.1016/j.celrep.2022.111092	PMID 35858571	YES	YES	retain
+R7	corneal epithelial hyperosmotic proteome	Chan et al. 2025, J Proteome Res 24:2771–2782	10.1021/acs.jproteome.4c01046	—	YES	YES	retain
+R8	independent hyperosmotic dry-eye proteome	Lin et al. 2024, Acta Ophthalmol.	10.1111/aos.16032	—	YES	YES	retain
+R9	calibrated ribosome profiling and flux	Tomuro et al. 2024, Nat Commun 15	10.1038/s41467-024-51258-0	—	YES	YES	retain
+R10	gene-expression layer buffering	Buccitelli & Selbach 2020, Nat Rev Genet 21:630–644	10.1038/s41576-020-0258-4	—	YES	YES	retain
+R11	DESeq2 model used in source analysis	Love et al. 2014, Genome Biol 15:550	10.1186/s13059-014-0550-8	PMID 25516281	YES	YES	retain; methods citation optional
+R12	multiple-testing correction	Benjamini & Hochberg 1995, J R Stat Soc B 57:289–300	10.1111/j.2517-6161.1995.tb02031.x	—	YES	YES	retain; methods citation optional
+R13	DIA/proteome quantification context	Cox & Mann 2008, Nat Biotechnol 26:1367–1372	10.1038/nbt.1511	PMID 19011662	YES	PARTIAL	retain only if platform description requires
+R14	public early RNA/Ribo dataset	GSE200097, NCBI GEO	—	GSE200097	YES	YES	accession citation
+R15	public external transcriptome	GSE323164, NCBI GEO	—	GSE323164	YES	YES	accession citation
+R16	public independent proteome	PXD054330/JPST003233, ProteomeXchange/jPOST	—	PXD054330; JPST003233	YES	YES	accession citation
+R17	external detectability resource	PXD059451, ProteomeXchange	—	PXD059451	YES	YES	accession citation
+R18	JPR data transparency context	ACS editorial, J Proteome Res 2025	10.1021/acs.jproteome.5c00352	—	YES	YES	retain in policy/availability note

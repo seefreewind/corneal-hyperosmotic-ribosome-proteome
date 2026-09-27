@@ -1,0 +1,12 @@
+term	locations_checked	decision	note
+predict	manuscript v2	PASS	only discussed as prohibited clinical interpretation
+prediction	Abstract/Methods/Discussion	PASS	CV described as gene-space statistical benchmark
+predictive	Methods/Cover	PASS	qualified as out-of-sample statistical metric
+anticipate	title alternatives	PASS	removed from recommended title
+explain	Discussion	PASS	used only for limitations/interpretation boundary
+determine	Discussion	PASS	negated for causal interpretation
+drive	Discussion	PASS	negated/avoided
+cause	Discussion	PASS	used only in explicit non-causal wording
+mediate	whole package	PASS	not used for primary interpretation
+trajectory	whole package	PASS	only as a prohibited longitudinal interpretation
+longitudinal	whole package	PASS	explicit limitation

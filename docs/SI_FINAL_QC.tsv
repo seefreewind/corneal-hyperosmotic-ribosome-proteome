@@ -1,0 +1,12 @@
+component	location	status
+dataset admission and sample structure	SI S1-S2; Tables S1-S3	PASS
+protein matrix QC and mapping	SI S3; Tables S4-S6	PASS
+normalization limitation	SI S3; manuscript Methods/Discussion	PASS
+primary statistics	SI S4; Tables S6-S7	PASS
+cross-validation	SI S5; Table S8	PASS
+permutation and block bootstrap	SI S5; Tables S8/S11	PASS
+detectability and alternative correlations	SI S6; Tables S9/S12	PASS
+module definitions and multiplicity	SI S7; Table S10	PASS
+negative fate-map findings	SI S7; Table S13	PASS
+supplementary figures and source-data map	SI S9; figures/source_data/	PASS
+software, seeds, and commit	SI S10; reproducibility/	PASS

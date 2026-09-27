@@ -1,6 +1,6 @@
 # Cross-study translational information in corneal epithelial hyperosmolarity
 
-This repository package contains the frozen computational workflow supporting the Journal of Proteome Research manuscript **“Early Translational Remodeling Anticipates Later Proteomic Adaptation to Hyperosmotic Stress in Human Corneal Epithelium.”** It tests whether early ribosome-level changes contain incremental information about an independent later proteomic response beyond RNA-level changes.
+This repository package contains the frozen computational workflow supporting the Journal of Proteome Research manuscript **“Ribosome-Level Responses Provide Incremental Information about Later Proteomic Remodeling during Corneal Epithelial Hyperosmotic Stress.”** It tests whether early ribosome-level changes contain incremental information about an independent later proteomic response beyond RNA-level changes.
 
 ## Study overview
 
@@ -43,6 +43,8 @@ Run the C1M audit before these commands. No raw DIA/RNA third-party files should
 ## Expected key outputs
 
 The primary set is 3,974 genes, with 3,966 complete cases. Expected C2/C2R values are in `docs/EXPECTED_KEY_OUTPUTS.tsv`; the frozen random seeds are in `config/FINAL_RANDOM_SEEDS.yaml`.
+
+The C4 release audit is recorded in `docs/FINAL_REPRODUCIBILITY_SNAPSHOT.md`, `docs/FINAL_RESULT_CONSISTENCY_AUDIT.tsv`, `docs/FINAL_REFERENCE_AUDIT.tsv`, `docs/FINAL_ACCESSION_AUDIT.tsv`, `docs/FIGURE_SOURCE_DATA_AUDIT.tsv`, `docs/SI_FINAL_QC.tsv`, and `docs/PUBLIC_DATA_NOVELTY_PARAGRAPH.md`.
 
 ## License and citation
 

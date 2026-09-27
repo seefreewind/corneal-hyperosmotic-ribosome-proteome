@@ -1,0 +1,4 @@
+title	accuracy	novelty	JPR_scope_fit	causal_overinterpretation_risk	desk_reject_clarity	decision
+T1 Early Translational Remodeling Anticipates Later Proteomic Adaptation to Hyperosmotic Stress in Human Corneal Epithelium	moderate	high	good	medium because anticipates can imply temporal prediction	good	ALTERNATIVE
+T2 Ribosome-Level Responses Provide Incremental Information about Later Proteomic Remodeling during Corneal Epithelial Hyperosmotic Stress	high	moderate-high	strong	low	strong and direct	RECOMMENDED
+T3 Cross-Study Multi-Omic Analysis Reveals Incremental Translational Information during Corneal Epithelial Osmoadaptation	moderate	moderate	good	medium; translational information less explicit	moderate	BACKUP

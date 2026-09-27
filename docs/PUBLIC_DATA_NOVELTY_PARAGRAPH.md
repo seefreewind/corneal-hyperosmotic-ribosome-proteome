@@ -1,0 +1,3 @@
+# Unified Public-Data Novelty Paragraph
+
+The source studies separately characterized early RNA/ribosome-level osmoadaptation and later hyperosmotic proteomic remodeling. This study adds a predefined cross-study comparison that tests whether early ribosome-level responses contain incremental information about an independent later proteomic phenotype beyond corresponding RNA-level changes. The contribution is an auditable molecular-layer comparison with residual, partial-association, out-of-sample, permutation, block-bootstrap, and detectability checks; it is not a new dataset, a longitudinal experiment, or a pathway-confirmation study.
