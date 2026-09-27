@@ -1,12 +1,12 @@
 cff-version: 1.2.0
-message: "Cite the associated Journal of Proteome Research manuscript and the original public datasets. Author metadata must be completed before release."
+message: "Cite the associated manuscript, this archived software release, and the original public datasets."
 title: "Ribosome-level information about later proteomic remodeling during corneal epithelial hyperosmotic stress"
 type: software
 abstract: "Frozen scripts and derived tables for a cross-study RNA-seq, ribosome-profiling, and proteomics analysis."
 date-released: 2026-09-27
-version: 0.1.0-internal
+version: 1.0.0
 repository-code: "https://github.com/seefreewind/corneal-hyperosmotic-ribosome-proteome"
-doi: "PLACEHOLDER — add the Zenodo/Figshare DOI before release"
+doi: "10.5281/zenodo.22985908"
 authors:
   - family-names: "Lin"
     given-names: "Da"
