@@ -5,5 +5,5 @@ proteome endpoint clarity	SCIENTIFIC_CLARIFICATION	added endpoint sentence to In
 figure source traceability	FIGURE_FIX	created FIG1-FIG5 source tables	PASS
 normalization uncertainty	METHODS_DETAIL	kept explicit limitation; no new reprocessing	PASS
 AI disclosure	FORMAT_FIX	final draft retains unverifiable-version wording	PASS
-Author metadata	METADATA_PLACEHOLDER	created templates	PENDING_AUTHOR
+Author metadata	METADATA_COMPLETED	author names, affiliations, ORCID, correspondence, funding, COI, and CRediT supplied	PASS
 Analysis change	ANALYSIS_CHANGE	none	NONE

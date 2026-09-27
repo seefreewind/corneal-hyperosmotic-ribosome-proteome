@@ -52,7 +52,7 @@ The license is a placeholder until the authors choose terms compatible with the 
 
 ## AI assistance disclosure
 
-OpenAI Codex was used for code-generation assistance, workflow organization, and manuscript drafting/editing. It was not an author. The authors must verify all outputs, interpretations, and references before public release. No AI-generated manuscript figure or TOC imagery was used.
+ChatGPT and DeepSeek were used to assist with code writing, language polishing, and formatting adjustments. They were not authors. The authors reviewed and validated the analyses, numerical results, interpretations, figures, source-data links, and references. No generative-AI manuscript figure or TOC imagery was used.
 
 ## Release status
 

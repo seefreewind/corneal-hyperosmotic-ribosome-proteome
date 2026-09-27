@@ -1,12 +1,12 @@
 item	requirement	status	note
 article_type	Article	PASS	manuscript package labels Article
 word_count	within JPR limit	PASS	~5,000 main text; abstract 166 words
-cover_letter	separate file	PASS	v2 generated; author metadata placeholders remain
+cover_letter	separate file	PASS	v2 generated; author metadata supplied; repository URL/DOI and final journal formatting remain
 supporting_information	separate file	PASS	v2 generated
 references	complete and verified	PASS	18/18 audit records verified
 figure_files	separate source-linked files	PASS	SVG plus PNG/TIFF; no PDF generated in Markdown package
 data_availability	accessions and release plan	PASS	repository DOI placeholder
 code_reproducibility	code/environment/seed records	PASS	clean rerun and local commit prepared
-AI_disclosure	ACS disclosure	PENDING_AUTHOR	draft prepared; author confirmation required
+AI_disclosure	ACS disclosure	PASS	author-provided ChatGPT/DeepSeek wording recorded
 TOC_graphic	no AI imagery	PASS	vector brief only
 submission_file_separation	manuscript/SI/cover separated	PASS	separate Markdown files
