@@ -8,7 +8,7 @@
 **Input checksums:** `reproducibility/C4_INPUT_SHA256.txt`.  
 **Environment capture:** `reproducibility/C4_ENVIRONMENT_CAPTURE.txt`.  
 **Random seeds:** `config/FINAL_RANDOM_SEEDS.yaml`.  
-**Git commit:** recorded after the public repository package is frozen; no remote publication was performed.
+**Git commit:** `ef469a5` (frozen public-repository package commit); no remote publication was performed. Subsequent documentation-only metadata may be committed separately.
 
 ## Key outputs
 
