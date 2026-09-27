@@ -4,9 +4,9 @@ title: "Ribosome-level information about later proteomic remodeling during corne
 type: software
 abstract: "Frozen scripts and derived tables for a cross-study RNA-seq, ribosome-profiling, and proteomics analysis."
 date-released: 2026-09-27
-version: 1.0.0
+version: 1.0.1
 repository-code: "https://github.com/seefreewind/corneal-hyperosmotic-ribosome-proteome"
-doi: "10.5281/zenodo.22985908"
+doi: "10.5281/zenodo.22985907"
 authors:
   - family-names: "Lin"
     given-names: "Da"
