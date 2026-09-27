@@ -5,7 +5,7 @@ cover_letter	separate file	PASS	v2 generated; author metadata supplied; reposito
 supporting_information	separate file	PASS	v2 generated
 references	complete and verified	PASS	18/18 audit records verified
 figure_files	separate source-linked files	PASS	SVG plus PNG/TIFF; no PDF generated in Markdown package
-data_availability	accessions and release plan	PASS	repository DOI placeholder
+data_availability	accessions and release plan	PASS	GitHub URL, v1.0.0 tag, and Zenodo DOI supplied
 code_reproducibility	code/environment/seed records	PASS	clean rerun and local commit prepared
 AI_disclosure	ACS disclosure	PASS	author-provided ChatGPT/DeepSeek wording recorded
 TOC_graphic	no AI imagery	PASS	vector brief only

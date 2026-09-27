@@ -27,7 +27,7 @@ The locked C4 clean run used Python 3.11.15 on macOS with packages in `environme
 4. Run `scripts/c2r_analysis.py`.
 5. Compare outputs with `docs/EXPECTED_KEY_OUTPUTS.tsv` and the frozen preregistrations.
 
-The C4 rerun used frozen processed inputs for C1M because network refresh of UniProt/MyGene mappings is not deterministic. The local audit script is `docs/c1m_frozen_local_audit.py` in the internal package; a public release should include the mapping provenance and a checksum of every permitted input.
+The C4 rerun used frozen processed inputs for C1M because network refresh of UniProt/MyGene mappings is not deterministic. The release includes the mapping provenance and input checksums; `docs/c1m_frozen_local_audit.py` records the frozen local audit logic.
 
 ## Reproduction commands
 
