@@ -12,7 +12,7 @@
 
 ## Reproducibility requirements
 
-The original frozen analysis used Python 3.9.6 and R 4.4.3. The C4 clean rerun used Python 3.11.15 on macOS with NumPy 1.26.4, pandas 2.3.3, SciPy 1.13.1, statsmodels 0.14.6, scikit-learn 1.6.1, matplotlib 3.9.4, seaborn 0.13.2, openpyxl 3.1.5, requests 2.32.3, and tabulate 0.9.0. Seeds, thresholds, model formulas, fold construction, and resampling budgets are recorded in the scripts and `config/FINAL_RANDOM_SEEDS.yaml`. The frozen repository package is publicly available at https://github.com/seefreewind/corneal-hyperosmotic-ribosome-proteome and archived under the all-versions DOI https://doi.org/10.5281/zenodo.22985907 (GitHub release `v1.0.1`).
+The original frozen analysis used Python 3.9.6 and R 4.4.3. The C4 clean rerun used Python 3.11.15 on macOS with NumPy 1.26.4, pandas 2.3.3, SciPy 1.13.1, statsmodels 0.14.6, scikit-learn 1.6.1, matplotlib 3.9.4, seaborn 0.13.2, openpyxl 3.1.5, requests 2.32.3, and tabulate 0.9.0. Seeds, thresholds, model formulas, fold construction, and resampling budgets are recorded in the scripts and `config/FINAL_RANDOM_SEEDS.yaml`. The frozen repository package is publicly available at https://github.com/seefreewind/corneal-hyperosmotic-ribosome-proteome and archived at https://doi.org/10.5281/zenodo.22985978 (GitHub release `v1.0.1`; all-versions DOI: https://doi.org/10.5281/zenodo.22985907).
 
 ## Data-use boundary
 

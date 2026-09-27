@@ -56,4 +56,4 @@ ChatGPT and DeepSeek were used to assist with code writing, language polishing, 
 
 ## Release status
 
-The public GitHub repository is https://github.com/seefreewind/corneal-hyperosmotic-ribosome-proteome. Release `v1.0.1` is archived in Zenodo under the all-versions DOI https://doi.org/10.5281/zenodo.22985907. No manuscript submission has been made.
+The public GitHub repository is https://github.com/seefreewind/corneal-hyperosmotic-ribosome-proteome. Release `v1.0.1` is archived in Zenodo at https://doi.org/10.5281/zenodo.22985978; the all-versions DOI is https://doi.org/10.5281/zenodo.22985907. No manuscript submission has been made.
