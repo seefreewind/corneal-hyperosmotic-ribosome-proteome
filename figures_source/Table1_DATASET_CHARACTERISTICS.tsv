@@ -1,0 +1,5 @@
+dataset	cell_model	osmolarity_or_stressor	time	assay	n	role
+GSE200097	immortalized human corneal epithelial cells (10.014 pRSV-T)	500 mOsm (+100 mM NaCl)	1 h and 6 h	RNA-seq + ribosome profiling	4 biological replicates per condition/time point	primary early molecular layers
+GSE323164	HCE-2	+90 mM NaCl; final osmolarity not reported in metadata	24 h	bulk RNA-seq (counts/FPKM)	3 control + 3 hyperosmotic	independent transcriptome context
+PXD054330 / JPST003233	human corneal epithelial cells	312 versus 450 mOsm	24 h	DIA proteomics	3 control + 3 hyperosmotic runs	independent later proteome
+PXD059451	human HCEC detectability resource	baseline resource; no outcome contrast used	baseline	proteomics detectability	3632 high-confidence, 3404 mapped	external detectability sensitivity

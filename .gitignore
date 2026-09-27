@@ -1,0 +1,9 @@
+*.raw
+*.mzML
+*.fastq
+*.bam
+*.sne
+._*
+.DS_Store
+.venv*
+__pycache__/

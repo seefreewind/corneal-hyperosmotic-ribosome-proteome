@@ -1,0 +1,86 @@
+branch: COMPUTATIONAL_MANUSCRIPT
+status: FROZEN_BEFORE_RESULTS
+freeze_date: 2026-09-26
+analysis_stage: C2_RNA_RIBO_PROTEIN_TEMPORAL_TRIANGULATION
+entry_gate: C1M_VERDICT_GO_C2_STRONG
+raw_data_policy: No protein RAW download or reprocessing; use recovered processed pivot only.
+primary_question: Does 6h Ribo log2FC predict independent 24h protein log2FC better than 6h RNA log2FC?
+secondary_question: Which predefined programs show early translational suppression, 6h recovery and 24h proteomic remodeling?
+study_design: Cross-study temporal triangulation; not a matched longitudinal experiment.
+primary_analysis_set:
+  key: Ensembl gene ID
+  inclusion: UNIQUE_1TO1 protein mapping, RNA and Ribo features available, processed protein values available
+  expected_count: 3974
+  significance_filter: none; all qualifying genes retained for correlation
+secondary_four_way_set:
+  inclusion: primary set plus GSE323164 24h RNA feature
+  expected_count: 3950
+effects:
+  RNA_Ribo: log2FC from frozen Phase-1F PRIMARY_RNA_RIBO_TE_ALL.tsv
+  TE: log2FC retained for fate maps; TE statistic used for TE-vs-protein secondary association
+  protein: group-level sample means from PG.Log2Quantity; hyperosmotic DED1/2/4 minus control NR1/3/4
+protein_model:
+  input_scale: processed PG.Log2Quantity; exact upstream normalization unknown and reported as such
+  primary: gene-level mean across uniquely mapped protein groups per sample followed by equal-variance two-sided t-test, n=3 vs 3
+  multiple_testing: Benjamini-Hochberg over primary protein genes
+  missingness: no imputation; gene-level sample means use observed group values; report fraction missing
+  sensitivity: raw processed matrix, column-median-centered matrix, complete-case and <=1/6 missingness subsets
+correlation:
+  primary_metric: Spearman rho
+  sensitivity_metric: Pearson r
+  endpoints: [RNA1, Ribo1, TE1_stat, RNA6, Ribo6, TE6_stat, GSE323164_RNA24]
+  protein_endpoint: PXD054330_Protein24_log2FC
+bootstrap:
+  unit: matched genes resampled with replacement
+  replicates: 10000
+  seed: 260926
+  confidence_interval: percentile 95%
+  empirical_two_sided_p: 2*min(P(delta<=0), P(delta>=0))
+  primary_delta: rho(Ribo6,Protein24)-rho(RNA6,Protein24)
+  rank_implementation: fixed global mid-ranks within each endpoint for vectorized paired bootstrap; direct Spearman is reported for point estimates
+multiplicity:
+  predictor_comparison: BH across predictor-versus-protein tests
+  module_enrichment: BH across all frozen module-endpoint tests
+  no_significance_filter_for_correlation: true
+fate_map:
+  marked_effect: abs(log2FC) >= 0.25 and FDR < 0.05
+  sensitivity_effect: abs(log2FC) >= 0.50 and FDR < 0.10
+  recovery_rule: Ribo/TE 1h marked negative, 6h is not marked negative and increases by >=0.25 log2FC, protein is marked positive
+  amplification_rule: Ribo6 marked and abs(Ribo6) >= abs(RNA6)+0.25, protein marked with Ribo6 sign
+  buffering_rule: RNA6 marked, Ribo6 attenuated/opposite by >=0.25, protein marked with Ribo6 sign
+  transcription_led_rule: RNA6 and protein marked same sign, with no amplification/buffering assignment
+  persistent_suppression_rule: Ribo1 and Ribo6 marked negative and protein marked negative
+  discordance_rule: RNA6 and protein marked opposite sign and Ribo6 does not resolve toward protein
+  priority_order: [EARLY_SUPPRESSION_LATE_RECOVERY, PERSISTENT_TRANSLATIONAL_SUPPRESSION, TRANSLATIONAL_AMPLIFICATION, TRANSLATIONAL_BUFFERING, TRANSCRIPTION_LED, RNA_PROTEIN_DISCORDANT, RIBO_PROTEIN_CONCORDANT, NO_CLEAR_PATTERN]
+modules:
+  definition_file: config/C2_MODULE_DEFINITIONS.tsv
+  membership: deterministic gene-symbol membership; no network expansion or exploratory pathway fishing
+  names: [mechanosensitive_ion_channels, focal_adhesion, actin_cytoskeleton, cell_matrix_adhesion, YAP_TAZ_mechanosensing, epithelial_junction_barrier, amino_acid_osmolyte_transport, mitochondrial_OXPHOS, integrated_stress_response]
+module_enrichment:
+  method: two-sided Mann-Whitney rank-sum competitive test against all primary genes
+  statistics: [RNA1_stat, Ribo1_stat, TE1_stat, RNA6_stat, Ribo6_stat, TE6_stat, Protein24_t]
+matched_null:
+  sets_per_module: 10000
+  seed: 260927
+  matching_features_available: [baseline_RNA_control_VST, protein_control_abundance, protein_missingness]
+  matching_features_unavailable: [baseline_Ribo_abundance, gene_length, GC]
+  matching_rule: quantile-stratified nearest-neighbour sampling without using outcome effects; module genes excluded from their own background
+  TRI_like_score: (-Ribo1_z + (Ribo6_z-Ribo1_z) + abs(Protein24_z))/3
+  strong: empirical_P < 0.05 and observed score above 97.5th null percentile
+  moderate: empirical_P >= 0.05 and < 0.10
+perturbation_bridge:
+  marked_perturbation: abs(TE effect) >= 0.25 and FDR < 0.05
+  classes: [MEAIB_SENSITIVE, TORIN_SENSITIVE, SHARED, PERTURBATION_INDEPENDENT, COMPLEX]
+  terminology: MeAIB-sensitive System-A transport perturbation; do not call SNAT2-dependent without genetic perturbation
+sensitivity:
+  proteome_normalization: [raw_processed, column_median_centered]
+  leave_one_module_out: [mitochondrial_OXPHOS, cytoskeleton_union_focal_actin, ribosomal_regex_RPL_RPS_MRPL_MRPS, integrated_stress_response]
+  measurement_quality: [all, high_RNA_control_abundance, high_Ribo_precision, low_protein_missingness, top75_protein_abundance, top50_protein_abundance]
+  expression_strata: quartiles of baseline RNA and protein abundance
+  cross_study_label: GSE200097 500 mOsm 1/6h; PXD054330 312 vs 450 mOsm 24h; GSE323164 independent HCE/NaCl 24h
+representative_nodes: [PIEZO1, TRPV4, YAP1, WWTR1, VCL, ACTN4, TLN1, PXN, FLNA, FLNB, ROCK1, ROCK2]
+claim_boundaries:
+  - PIEZO1 remains a representative node, not a central causal driver
+  - use temporal triangulation, cross-study concordance and early-to-late molecular continuity
+  - do not claim longitudinal trajectory, causality, shear sensitization, threshold, memory or clinical validation
+stop_rule: Finish C2 reports and PROJECT_STATUS.md; do not enter C3 or manuscript production.

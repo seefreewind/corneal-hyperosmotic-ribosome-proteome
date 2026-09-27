@@ -1,0 +1,159 @@
+{
+  "C2R_VERDICT": "MANUSCRIPT_GO_STRONG",
+  "claim_option": "A",
+  "recommended_title": "Early translational remodeling anticipates later proteomic adaptation to hyperosmotic stress in human corneal epithelium",
+  "residual": {
+    "n": 3966,
+    "RNA6_to_Ribo6_intercept": 0.06647275363052767,
+    "RNA6_to_Ribo6_slope": 0.9331270104474683,
+    "residual_protein_spearman_rho": 0.11058808019012686,
+    "bootstrap_median_rho": 0.11017297167810033,
+    "CI_low": 0.07798900826729868,
+    "CI_high": 0.14217644918427755,
+    "empirical_P": 0.0,
+    "PASS": true
+  },
+  "partial": [
+    {
+      "association": "Ribo6_Protein24_adjusted_RNA6",
+      "n": 3966,
+      "partial_rho": 0.11845983274673053,
+      "CI_low": 0.08684251379264145,
+      "CI_high": 0.1502841947947061,
+      "empirical_P": 0.0
+    },
+    {
+      "association": "RNA6_Protein24_adjusted_Ribo6",
+      "n": 3966,
+      "partial_rho": 0.008724710723242338,
+      "CI_low": -0.022911104326334395,
+      "CI_high": 0.039861948289613446,
+      "empirical_P": 0.5706
+    }
+  ],
+  "cv_delta": {
+    "comparison": "Model_B_minus_Model_A",
+    "n_fold_repeat": 100,
+    "Delta_CV_rho": 0.039280648992946095,
+    "CI_low": 0.029919394718886848,
+    "CI_high": 0.04871149906333399,
+    "empirical_P": 0.0,
+    "Model_B_out_of_sample_better": true
+  },
+  "permutation_P": 9.999000099990002e-05,
+  "detectability": {
+    "dataset": "PXD059451",
+    "high_confidence_genes": 3632,
+    "mapped_primary_genes": 3404,
+    "external_detectability_used": "YES",
+    "RNA6_rho": 0.11973945575889802,
+    "Ribo6_rho": 0.17899457932735238,
+    "Delta_rho": 0.05925512356845436,
+    "abundance_rank_available": false
+  },
+  "block": {
+    "n_genes": 3964,
+    "n_chromosome_blocks": 23,
+    "Delta_rho_median": 0.049833798404433,
+    "CI_low": 0.023633247767355724,
+    "CI_high": 0.07215763670844759,
+    "empirical_P": 0.0006,
+    "direction_stable": true
+  },
+  "module_audit": [
+    {
+      "module": "YAP_TAZ_mechanosensing",
+      "empirical_P": 0.1108889111088891,
+      "BH_FDR": 0.24950004999500047,
+      "classification_C2R": "NOT_SUPPORTED"
+    },
+    {
+      "module": "actin_cytoskeleton",
+      "empirical_P": 0.0707929207079292,
+      "BH_FDR": 0.2123787621237876,
+      "classification_C2R": "NOT_SUPPORTED"
+    },
+    {
+      "module": "amino_acid_osmolyte_transport",
+      "empirical_P": 0.0072992700729927,
+      "BH_FDR": 0.0656934306569343,
+      "classification_C2R": "SUGGESTIVE_NOMINAL_ONLY"
+    },
+    {
+      "module": "cell_matrix_adhesion",
+      "empirical_P": 0.1834816518348165,
+      "BH_FDR": 0.27522247775222475,
+      "classification_C2R": "NOT_SUPPORTED"
+    },
+    {
+      "module": "epithelial_junction_barrier",
+      "empirical_P": 0.4588541145885411,
+      "BH_FDR": 0.589955290185267,
+      "classification_C2R": "NOT_SUPPORTED"
+    },
+    {
+      "module": "focal_adhesion",
+      "empirical_P": 0.1396860313968603,
+      "BH_FDR": 0.25143485651434855,
+      "classification_C2R": "NOT_SUPPORTED"
+    },
+    {
+      "module": "integrated_stress_response",
+      "empirical_P": 0.9804019598040196,
+      "BH_FDR": 0.9804019598040196,
+      "classification_C2R": "NOT_SUPPORTED"
+    },
+    {
+      "module": "mechanosensitive_ion_channels",
+      "empirical_P": NaN,
+      "BH_FDR": NaN,
+      "classification_C2R": "NOT_SUPPORTED"
+    },
+    {
+      "module": "mitochondrial_OXPHOS",
+      "empirical_P": 0.7198280171982802,
+      "BH_FDR": 0.8098065193480652,
+      "classification_C2R": "NOT_SUPPORTED"
+    },
+    {
+      "module": "mechanotransduction_network_composite",
+      "empirical_P": 0.0250974902509749,
+      "BH_FDR": 0.11293870612938706,
+      "classification_C2R": "SUGGESTIVE_NOMINAL_ONLY"
+    }
+  ],
+  "outputs": [
+    "results/c2r/._ABUNDANCE_STRATIFIED_RESULTS.tsv",
+    "results/c2r/._AMINO_ACID_PROGRAM_ROBUSTNESS.tsv",
+    "results/c2r/._BLOCK_BOOTSTRAP.tsv",
+    "results/c2r/._C2R_AUDIT_SUMMARY.json",
+    "results/c2r/._DETECTABILITY_SENSITIVITY.tsv",
+    "results/c2r/._EFFECT_SIZE_STRATIFIED_RESULTS.tsv",
+    "results/c2r/._EXTERNAL_QUALITATIVE_VALIDATION.tsv",
+    "results/c2r/._MODULE_MULTIPLE_TESTING.tsv",
+    "results/c2r/._NESTED_MODEL_CV.tsv",
+    "results/c2r/._NESTED_MODEL_CV_DELTA.tsv",
+    "results/c2r/._NESTED_MODEL_CV_SUMMARY.tsv",
+    "results/c2r/._PARTIAL_ASSOCIATION.tsv",
+    "results/c2r/._PERMUTATION_NULL.tsv",
+    "results/c2r/._PXD059451_DETECTABILITY_ANNOTATION.tsv",
+    "results/c2r/._RNA_ADJUSTED_RIBO_RESULTS.tsv",
+    "results/c2r/._ROBUST_CORRELATION_SENSITIVITY.tsv",
+    "results/c2r/ABUNDANCE_STRATIFIED_RESULTS.tsv",
+    "results/c2r/AMINO_ACID_PROGRAM_ROBUSTNESS.tsv",
+    "results/c2r/BLOCK_BOOTSTRAP.tsv",
+    "results/c2r/C2R_AUDIT_SUMMARY.json",
+    "results/c2r/DETECTABILITY_SENSITIVITY.tsv",
+    "results/c2r/EFFECT_SIZE_STRATIFIED_RESULTS.tsv",
+    "results/c2r/EXTERNAL_QUALITATIVE_VALIDATION.tsv",
+    "results/c2r/MODULE_MULTIPLE_TESTING.tsv",
+    "results/c2r/NESTED_MODEL_CV.tsv",
+    "results/c2r/NESTED_MODEL_CV_DELTA.tsv",
+    "results/c2r/NESTED_MODEL_CV_SUMMARY.tsv",
+    "results/c2r/PARTIAL_ASSOCIATION.tsv",
+    "results/c2r/PERMUTATION_NULL.tsv",
+    "results/c2r/PXD059451_DETECTABILITY_ANNOTATION.tsv",
+    "results/c2r/RNA_ADJUSTED_RIBO_RESULTS.tsv",
+    "results/c2r/ROBUST_CORRELATION_SENSITIVITY.tsv"
+  ]
+}

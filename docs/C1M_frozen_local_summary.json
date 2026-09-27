@@ -1,0 +1,18 @@
+{
+  "mode": "FROZEN_PROCESSED_INPUTS_NO_NETWORK_REFRESH",
+  "pivot_sha256": "0c9c3fa328353c7431e148b5faaba8708f4e0196dee0c59164abd46d1f313125",
+  "pivot_rows": 4743,
+  "pivot_columns": 13,
+  "sample_columns": 6,
+  "complete_case_rows": 4518,
+  "overall_missingness": 0.014336917562724016,
+  "unique_1to1_groups": 4364,
+  "multi_gene_groups": 55,
+  "unmapped_groups": 324,
+  "protein_gene_symbols": 4301,
+  "rna_ribo_protein": 3974,
+  "four_dataset": 3950,
+  "expected_primary_overlap": 3974,
+  "expected_four_dataset": 3950,
+  "PASS": true
+}

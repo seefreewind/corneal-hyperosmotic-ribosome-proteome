@@ -1,0 +1,2 @@
+comparison	n_fold_repeat	Delta_CV_rho	CI_low	CI_high	empirical_P	Model_B_out_of_sample_better
+Model_B_minus_Model_A	100	0.039280648992946095	0.029919394718886848	0.04871149906333399	0.0	True

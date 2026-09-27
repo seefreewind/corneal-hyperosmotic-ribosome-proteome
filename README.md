@@ -1,0 +1,57 @@
+# Cross-study translational information in corneal epithelial hyperosmolarity
+
+This repository package contains the frozen computational workflow supporting the Journal of Proteome Research manuscript **“Early Translational Remodeling Anticipates Later Proteomic Adaptation to Hyperosmotic Stress in Human Corneal Epithelium.”** It tests whether early ribosome-level changes contain incremental information about an independent later proteomic response beyond RNA-level changes.
+
+## Study overview
+
+The workflow integrates GSE200097 (early RNA-seq and ribosome profiling), GSE323164 (independent 24 h transcriptome), PXD054330/JPST003233 (independent 24 h DIA proteome), and PXD059451 (baseline HCEC detectability sensitivity). The analysis is cross-study and non-longitudinal. It does not establish causality, PIEZO1 dependence, mechanotransduction, or clinical prediction.
+
+## Public inputs
+
+- GSE200097 — early RNA/Ribo responses.
+- GSE323164 — independent HCE-2 transcriptome.
+- PXD054330 / JPST003233 — HCEC DIA proteome.
+- PXD059451 — HCEC detectability resource.
+
+Large third-party raw files are not included. Accession identifiers and download instructions are recorded in `docs/DATA_ACCESSION_AUDIT.tsv`. The processed PXD054330 pivot and source tables may only be redistributed after author and repository-term review.
+
+## Required software
+
+The locked C4 clean run used Python 3.11.15 on macOS with packages in `environment/requirements.txt`. R 4.4.3 is recorded for the broader project environment; the C2/C2R manuscript-critical scripts are Python-based. Recreate the environment with `python -m venv .venv` and `pip install -r environment/requirements.txt`, or use `environment/environment.yml` with conda.
+
+## Exact analysis order
+
+1. Recover or place the permitted processed inputs according to the project path map.
+2. Run the C1M matrix and identifier audit using the frozen mapping rules.
+3. Run `scripts/c2_analysis.py`.
+4. Run `scripts/c2r_analysis.py`.
+5. Compare outputs with `docs/EXPECTED_KEY_OUTPUTS.tsv` and the frozen preregistrations.
+
+The C4 rerun used frozen processed inputs for C1M because network refresh of UniProt/MyGene mappings is not deterministic. The local audit script is `docs/c1m_frozen_local_audit.py` in the internal package; a public release should include the mapping provenance and a checksum of every permitted input.
+
+## Reproduction commands
+
+From the repository root after restoring the permitted input paths:
+
+```bash
+python scripts/c2_analysis.py
+python scripts/c2r_analysis.py
+```
+
+Run the C1M audit before these commands. No raw DIA/RNA third-party files should be copied into this repository without permission.
+
+## Expected key outputs
+
+The primary set is 3,974 genes, with 3,966 complete cases. Expected C2/C2R values are in `docs/EXPECTED_KEY_OUTPUTS.tsv`; the frozen random seeds are in `config/FINAL_RANDOM_SEEDS.yaml`.
+
+## License and citation
+
+The license is a placeholder until the authors choose terms compatible with the source datasets. Cite the manuscript and the original accession records; see `CITATION.cff`.
+
+## AI assistance disclosure
+
+OpenAI Codex was used for code-generation assistance, workflow organization, and manuscript drafting/editing. It was not an author. The authors must verify all outputs, interpretations, and references before public release. No AI-generated manuscript figure or TOC imagery was used.
+
+## Release status
+
+This is a frozen internal upload package. No GitHub repository or Zenodo DOI has been created from this workspace, and no submission has been made.

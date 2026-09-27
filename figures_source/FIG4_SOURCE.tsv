@@ -1,0 +1,9 @@
+comparison	estimate	CI_low	CI_high	P
+Primary paired	0.04971168011039095	0.023766264613078198	0.07572869112018572	0.0002
+Chromosome blocks	0.049833798404433	0.023633247767355724	0.07215763670844759	0.0006
+Detectability	0.05925512356845436			restricted
+Baseline RNA Q1	0.0444234671			stratum
+Baseline RNA Q4	0.0454213163			stratum
+Large Protein24 effect Q4	0.0395209377			stratum
+Pearson	0.0350168			alternative metric
+Kendall	0.0349564			alternative metric

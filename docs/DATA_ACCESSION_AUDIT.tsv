@@ -1,0 +1,6 @@
+accession\tdatabase\tmatching_resource\tcondition_or_role\tstatus\taction
+GSE200097\tNCBI GEO\tEarly RNA-seq and ribosome profiling in human corneal epithelial cells\t500 mOsm; 1 h and 6 h; primary early layer\tPASS\tretain accession
+GSE323164\tNCBI GEO\tIndependent HCE-2 transcriptome\t+90 mM NaCl; 24 h; external transcriptomic context\tPASS\tretain accession; final osmolarity not in metadata
+PXD054330\tProteomeXchange\tHuman corneal epithelial-cell DIA proteome\t312 versus 450 mOsm; 24 h; primary Protein24 endpoint\tPASS\tretain accession
+JPST003233\tjPOST\tRepository project linked to PXD054330\tprocessed DIA matrix and file inventory\tPASS\tretain paired repository identifier
+PXD059451\tProteomeXchange\tHCEC baseline proteomic detectability resource\tdetectability restriction only; no hyperosmotic outcome\tPASS\tretain accession; no abundance rank claim

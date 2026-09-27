@@ -1,0 +1,7 @@
+{
+  "C1M": "PASS",
+  "C2": "PASS",
+  "C2R": "PASS",
+  "all_targets_pass": true,
+  "comparison_file": "C4_REPRODUCIBILITY_COMPARISON.tsv"
+}

@@ -1,0 +1,7 @@
+matrix_column	sample_id	raw_file	condition	biological_replicate	technical_replicate	mapping_source	mapping_confidence
+[1] DED1_IS_DIA.raw.PG.Log2Quantity	DED1	DED1_IS_DIA.raw	hyperosmotic	1	NOT_REPORTED	Exact matrix raw basename + jPOST file list; replicate index from filename; publication states biological triplicates.	INFERRED
+[2] DED2_IS_DIA.raw.PG.Log2Quantity	DED2	DED2_IS_DIA.raw	hyperosmotic	2	NOT_REPORTED	Exact matrix raw basename + jPOST file list; replicate index from filename; publication states biological triplicates.	INFERRED
+[3] DED4_IS_DIA.raw.PG.Log2Quantity	DED4	DED4_IS_DIA.raw	hyperosmotic	4	NOT_REPORTED	Exact matrix raw basename + jPOST file list; replicate index from filename; publication states biological triplicates.	INFERRED
+[4] NR1_IS_DIA_20220730051416.raw.PG.Log2Quantity	NR1	NR1_IS_DIA_20220730051416.raw	isosmotic	1	NOT_REPORTED	Exact matrix raw basename + jPOST file list; replicate index from filename; publication states biological triplicates.	INFERRED
+[5] NR3_IS_DIA.raw.PG.Log2Quantity	NR3	NR3_IS_DIA.raw	isosmotic	3	NOT_REPORTED	Exact matrix raw basename + jPOST file list; replicate index from filename; publication states biological triplicates.	INFERRED
+[6] NR4_IS_DIA.raw.PG.Log2Quantity	NR4	NR4_IS_DIA.raw	isosmotic	4	NOT_REPORTED	Exact matrix raw basename + jPOST file list; replicate index from filename; publication states biological triplicates.	INFERRED

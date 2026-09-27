@@ -1,0 +1,2 @@
+dataset	high_confidence_genes	mapped_primary_genes	external_detectability_used	RNA6_rho	Ribo6_rho	Delta_rho	abundance_rank_available
+PXD059451	3632	3404	YES	0.11973945575889802	0.17899457932735238	0.05925512356845436	False

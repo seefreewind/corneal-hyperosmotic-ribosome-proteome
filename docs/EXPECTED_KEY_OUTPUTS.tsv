@@ -1,0 +1,11 @@
+metric\texpected_value\ttolerance\tsource
+primary_gene_count\t3974\t0\tC2_AUDIT_SUMMARY.json
+complete_case_n\t3966\t0\tC2_AUDIT_SUMMARY.json
+RNA6_rho\t0.11347795924096821\t1e-10\tC2_AUDIT_SUMMARY.json
+Ribo6_rho\t0.16326415613882245\t1e-10\tC2_AUDIT_SUMMARY.json
+Delta_rho\t0.04971168011039095\t1e-10\tC2_AUDIT_SUMMARY.json
+residual_rho\t0.11058808019012686\t1e-10\tC2R_AUDIT_SUMMARY.json
+partial_Ribo_given_RNA\t0.11845983274673053\t1e-10\tC2R_AUDIT_SUMMARY.json
+CV_ModelB_minus_A\t0.039280648992946095\t1e-10\tC2R_AUDIT_SUMMARY.json
+structured_permutation_P\t0.000099990001\t1e-12\tC2R_AUDIT_SUMMARY.json
+block_bootstrap_delta\t0.049833798404433\t1e-10\tC2R_AUDIT_SUMMARY.json

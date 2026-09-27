@@ -1,0 +1,15 @@
+requirement	location	status
+accessions and sample counts	Methods Data sources; Table 1; FINAL_ACCESSION_AUDIT.tsv	PASS
+protein matrix source and QC	Methods Proteomic matrix; Table S4-S5	PASS
+protein mapping rules	Methods mapping; Table S6; C1M audit	PASS
+normalization and missingness	Methods differential proteomics; C1M QC	PASS with upstream-normalization limitation
+RNA/Ribo statistical source	Methods RNA/Ribo effects	PASS
+primary intersection	Methods feature space	PASS
+bootstrap procedure	Methods primary association	PASS
+CV procedure	Methods nested CV	PASS
+partial association	Methods incremental tests	PASS
+structured permutation	Methods sensitivity	PASS
+block bootstrap	Methods sensitivity	PASS
+detectability restriction	Methods sensitivity; SI	PASS
+multiple testing	Methods program-level analysis	PASS
+software versions	Methods software; reproducibility/C4_ENVIRONMENT_CAPTURE.txt	PASS

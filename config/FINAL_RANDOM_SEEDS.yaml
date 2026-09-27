@@ -1,0 +1,29 @@
+project_stage: C4_CLEAN_REPRODUCIBILITY_RERUN
+freeze_date: 2026-09-27
+primary_seed: 260926
+c2:
+  bootstrap_rho: 260926
+  bootstrap_delta: 261027
+  module_matched_null: 260927
+  perturbation_bridge: recorded in scripts/c2_analysis.py
+c2r:
+  residual_bootstrap: 270927
+  partial_ribo_bootstrap: 270928
+  partial_rna_bootstrap: 270929
+  nested_cv_fold_generation: 270929
+  nested_cv_delta_bootstrap: 270930
+  structured_permutation: 270931
+  chromosome_block_bootstrap: 270932
+  detectability_and_stratification: recorded in scripts/c2r_analysis.py
+  module_matched_null: not stochastic in c2r module audit
+  amino_acid_leave_one_out: 270933
+resampling_budgets:
+  paired_gene_bootstrap: 10000
+  structured_permutation: 10000
+  chromosome_block_bootstrap: 10000
+  nested_cv_repeats: 100
+  nested_cv_folds: 10
+notes:
+  - Seeds are explicit in the frozen scripts and were not changed for C4.
+  - Any raw-output zero empirical P is reported in the manuscript as <1e-4.
+  - No exploratory analysis or threshold re-optimization was added in C4.

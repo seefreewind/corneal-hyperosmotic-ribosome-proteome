@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Cite the associated Journal of Proteome Research manuscript and the original public datasets. Author metadata must be completed before release."
+title: "Cross-study translational information in corneal epithelial hyperosmolarity"
+type: software
+abstract: "Frozen scripts and derived tables for a cross-study RNA-seq, ribosome-profiling, and proteomics analysis."
+date-released: 2026-09-27
+version: 0.1.0-internal
+repository-code: "PLACEHOLDER — add the final GitHub URL before release"
+doi: "PLACEHOLDER — add the Zenodo/Figshare DOI before release"
+authors:
+  - family-names: "PLACEHOLDER"
+    given-names: "AUTHOR"
+    affiliation: "PLACEHOLDER"
+    orcid: "https://orcid.org/0000-0000-0000-0000"

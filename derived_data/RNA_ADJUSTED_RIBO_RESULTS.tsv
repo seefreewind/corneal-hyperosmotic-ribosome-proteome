@@ -1,0 +1,2 @@
+n	RNA6_to_Ribo6_intercept	RNA6_to_Ribo6_slope	residual_protein_spearman_rho	bootstrap_median_rho	CI_low	CI_high	empirical_P	PASS
+3966	0.06647275363052767	0.9331270104474683	0.11058808019012686	0.11017297167810033	0.07798900826729868	0.14217644918427755	0.0	True

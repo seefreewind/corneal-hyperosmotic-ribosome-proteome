@@ -1,0 +1,8 @@
+figure	source_data	script_or_origin	status
+Figure1_STUDY_DESIGN	Table1_DATASET_CHARACTERISTICS.tsv; TableS4-S5	build_jpr_package.py	PASS
+Figure2_PRIMARY_ASSOCIATIONS	TableS6; TableS7	build_jpr_package.py	PASS
+Figure3_INCREMENTAL_INFORMATION	TableS6; TableS8	build_jpr_package.py	PASS
+Figure4_ROBUSTNESS	TableS8-S9; C2R summary	build_jpr_package.py	PASS
+Figure5_MODULE_MULTIPLICITY	TableS10_C2R_MODULE_MULTIPLE_TESTING.tsv	build_jpr_package.py	PASS
+FigureS1-S8	C2/C2R frozen TSV outputs	c2_analysis.py / c2r_analysis.py	PASS
+FigureS9_FATE_MAP	TableS13_FATE_CLASS_COUNTS.tsv	C2 frozen output; no new plot	TABLE_ONLY

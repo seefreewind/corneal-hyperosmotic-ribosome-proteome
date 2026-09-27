@@ -1,0 +1,9 @@
+issue	classification	action	status
+public-data novelty	TEXT_FIX	added explicit distinction from source papers	PASS
+T1 anticipates wording	CLAIM_SOFTENING	selected T2	PASS
+proteome endpoint clarity	SCIENTIFIC_CLARIFICATION	added endpoint sentence to Introduction	PASS
+figure source traceability	FIGURE_FIX	created FIG1-FIG5 source tables	PASS
+normalization uncertainty	METHODS_DETAIL	kept explicit limitation; no new reprocessing	PASS
+AI disclosure	FORMAT_FIX	final draft retains unverifiable-version wording	PASS
+Author metadata	METADATA_PLACEHOLDER	created templates	PENDING_AUTHOR
+Analysis change	ANALYSIS_CHANGE	none	NONE

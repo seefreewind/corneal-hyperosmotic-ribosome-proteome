@@ -1,0 +1,9 @@
+endpoint	n	estimate	CI_low	CI_high	P	interpretation
+RNA6_to_Protein24	3966	0.11348	0.08107	0.14571	<1e-4	modest cross-study association
+Ribo6_to_Protein24	3966	0.16326	0.13150	0.19493	<1e-4	modestly stronger association
+Delta_Ribo_minus_RNA	3966	0.04971	0.02377	0.07573	0.0002	incremental rank association
+RNA_adjusted_Ribo_residual	3966	0.11059	0.07799	0.14218	<1e-4	RNA-adjusted residual association
+Partial_Ribo_given_RNA	3966	0.11846	0.08684	0.15028	<1e-4	partial association retained
+Partial_RNA_given_Ribo	3966	0.00872	-0.02291	0.03986	0.5706	reciprocal partial association near zero
+Model_B_minus_Model_A_CV	1000 fold-repeat comparisons	0.03928	0.02992	0.04871	<1e-4	RNA+Ribo versus RNA-only
+Chromosome_block_bootstrap	3964	0.04983	0.02363	0.07216	0.0006	direction stable

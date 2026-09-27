@@ -1,0 +1,8 @@
+record_type	dataset_or_metric	value	unit	note
+feature_space	protein_rows	4301	genes	unique 1:1 protein-to-gene rows
+feature_space	RNA_Ribo_protein	3974	genes	primary overlap
+feature_space	four_dataset_overlap	3950	genes	including GSE323164
+proteome_QC	complete_case_rows	4518	rows	PXD054330 matrix
+proteome_QC	overall_missingness	0.0143369176	fraction	no imputation
+proteome_design	control_runs	3	runs	PXD054330
+proteome_design	hyperosmotic_runs	3	runs	PXD054330

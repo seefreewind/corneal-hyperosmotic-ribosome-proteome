@@ -1,0 +1,2 @@
+n_genes	n_chromosome_blocks	Delta_rho_median	CI_low	CI_high	empirical_P	direction_stable
+3964	23	0.049833798404433	0.023633247767355724	0.07215763670844759	0.0006	True

@@ -1,0 +1,101 @@
+branch: COMPUTATIONAL_MANUSCRIPT
+stage: C2R_MANUSCRIPT_GRADE_ROBUSTNESS_AND_INCREMENTAL_INFORMATION
+status: FROZEN_BEFORE_C2R_RESULTS
+freeze_date: 2026-09-27
+entry_gate: C2_STRONG_TRANSLATIONAL_ADVANTAGE
+stop_rule: Finish C2R audit and reports; do not draft the formal manuscript or enter C3.
+primary_question: Does Ribo6 contain reproducible information about independent Protein24 remodeling beyond RNA6?
+primary_data:
+  source_table: results/c2/CROSSOMIC_MASTER_TABLE.tsv
+  primary_set: 3974-gene C2 primary set; endpoint-wise complete cases without significance filtering
+  primary_effects: RNA6_log2FC, Ribo6_log2FC, Protein24_log2FC
+  finite_primary_test_n: 3966 expected
+storyline_changes:
+  fate_map: supplementary negative result only; never a central result
+  early_suppression_late_recovery: do not threshold-reoptimize; retain zero count
+  MeAIB_Torin_recovery: do not threshold-reoptimize; retain zero count
+  PIEZO1: representative node only; no causal or shear-specific claim
+residual_test:
+  model: OLS Ribo6_log2FC ~ intercept + RNA6_log2FC
+  residual_name: Ribo6_residual
+  interpretation: RNA-adjusted translational component; not causal translation efficiency
+  primary_metric: Spearman rho(Ribo6_residual, Protein24_log2FC)
+  bootstrap: paired gene bootstrap, B=10000, seed=270927, percentile 95% CI, empirical two-sided P
+  pass_rule: rho>0, 95% CI excludes 0, and empirical P<0.05
+partial_association:
+  method: rank-residualization; mid-rank transform each variable, regress each outcome/predictor rank on covariate rank with intercept, correlate residuals
+  primary: partial Spearman Ribo6-Protein24 adjusting for RNA6
+  comparator: partial Spearman RNA6-Protein24 adjusting for Ribo6
+  bootstrap: paired gene bootstrap, B=10000, seed=270928, percentile 95% CI, empirical two-sided P
+nested_models:
+  estimator: ordinary least squares with intercept; predictors standardized using training-fold mean and SD only
+  outcome: Protein24_log2FC
+  model_A: [RNA6_log2FC]
+  model_B: [RNA6_log2FC, Ribo6_log2FC]
+  model_C: [RNA6_log2FC, TE6_log2FC]
+  model_D: [RNA6_log2FC, Ribo6_log2FC, TE6_log2FC]
+  complete_case_rule: model-specific complete cases; shared folds generated on the primary finite A/B/C/D intersection
+cross_validation:
+  design: repeated 10-fold CV, 10 repeats, shuffled within fixed seed 270929
+  shared_folds: identical fold assignments for all models
+  primary_metric: out-of-sample Spearman rho
+  secondary_metrics: [out_of_sample_R2, out_of_sample_RMSE]
+  comparison: paired fold/repeat Model B minus Model A
+  delta_inference: bootstrap paired fold/repeat differences, B=10000, seed=270930, percentile 95% CI, empirical two-sided P
+  in_sample_r2: prohibited as primary evidence
+permutation_null:
+  replicates: 10000
+  seed: 270931
+  permuted_quantity: Ribo6 RNA-adjusted residual labels, then reconstruct null Ribo6 using observed RNA6 slope and intercept
+  strata: RNA6 effect quintile x baseline_RNA_control quartile x Protein24 baseline abundance quartile
+  purpose: retain RNA abundance, effect-size and baseline detectability structure while removing incremental Ribo information
+  evaluation: fixed 10-fold CV Model B minus Model A; empirical upper-tail P against observed Delta_CV_rho
+detectability:
+  local_external_dataset: PXD059451 SupplementaryTable1_protein_List_integrity_and_consistency.xlsx
+  role: HCEC baseline detectability annotation only; never hyperosmolarity outcome
+  high_confidence_rule: average consistency >=50 percent and at least two of six platform-specific consistency values >=50 percent
+  abundance_rank: unavailable from downloaded supplementary table; do not fabricate
+  restricted_analysis: repeat Delta_rho and Model A/B CV on mapped high-confidence genes when n>=100
+  fallback: if mapping/coverage insufficient, report EXTERNAL_DETECTABILITY_NOT_AVAILABLE without blocking C2R
+stratification:
+  baseline_RNA: quartiles of baseline RNA control VST; report Q1 and Q4
+  Ribo_coverage: quartiles of Ribo6 standard error (Q1=highest precision, Q4=lowest precision); report all quartiles
+  baseline_protein: quartiles of mean control protein abundance; report all quartiles
+  protein_effect_magnitude: quartiles of abs(Protein24_log2FC), no significance filtering; report Q1-Q4 and Q4 as large-effect subset
+robust_correlation:
+  metrics: [Spearman, Pearson, Kendall_tau, biweight_midcorrelation]
+  rule: report all prespecified metrics and Ribo6-minus-RNA6 direction; do not select the most favorable metric
+module_audit:
+  source: results/c2/C2_MATCHED_NULL_SPECIFICITY.tsv
+  multiplicity: BH across nine frozen modules plus the derived mechanotransduction composite, with derived status labeled
+  confirmatory_rule: BH_FDR<0.05
+  nominal_rule: P<0.05 and BH_FDR>=0.05 is suggestive only
+amino_acid_robustness:
+  target: amino_acid_osmolyte_transport
+  leave_one_gene_out: recompute observed TRI-like score and matched-null empirical P after excluding each module gene
+  leave_top3_rule: exclude three genes with largest absolute Protein24 standardized effect within the module
+  robust_rule: all leave-one-out and leave-top3 observed scores remain above null median and empirical P<0.10
+external_qualitative_validation:
+  source_1: PXD054330 publication; qualitative SNAT2/SLC38A2, GLS1/GLS and mitochondrial/osmotic adaptation consistency only
+  source_2: Acta Ophthalmologica 2024 abstract DOI 10.1111/aos.16032; independent hyperosmotic HCE proteome directional context only
+  statistics: none added to primary analyses; no pooled effect estimates
+block_bootstrap:
+  unit: chromosome blocks from GSE323164 gene annotation; genes without chromosome annotation excluded from this sensitivity
+  replicates: 10000
+  seed: 270932
+  resampling: sample chromosome labels with replacement and concatenate complete-case genes from sampled blocks
+  endpoint: Delta_rho Ribo6-Protein24 minus RNA6-Protein24
+  robustness_rule: point direction and 95% CI lower bound >0
+decision_gate:
+  MANUSCRIPT_GO_STRONG: primary Delta robust + residual PASS + nested CV B>A out-of-sample + permutation P<0.05 + quality stable + block direction stable
+  MANUSCRIPT_GO_MODERATE: primary Delta robust but incremental evidence mixed; use Claim B
+  MANUSCRIPT_GO_CROSSOMIC_ONLY: cross-omic continuity only; use Claim C
+  HOLD: primary result unstable to quality, normalization or block structure
+claim_options:
+  A: Early translational changes contain incremental information about later proteomic remodeling beyond transcription alone.
+  B: Ribosome-level changes show a modest but reproducibly stronger cross-study association with later proteomic remodeling than RNA-level changes.
+  C: RNA and ribosome-level changes both show modest cross-study continuity with later proteomic remodeling.
+title_rules:
+  A: Early translational remodeling anticipates later proteomic adaptation to hyperosmotic stress in human corneal epithelium
+  B: Cross-omic temporal triangulation reveals translational signatures of corneal epithelial osmoadaptation
+  C: Cross-omic mapping of corneal epithelial responses to hyperosmotic stress
