@@ -13,7 +13,7 @@ The workflow integrates GSE200097 (early RNA-seq and ribosome profiling), GSE323
 - PXD054330 / JPST003233 — HCEC DIA proteome.
 - PXD059451 — HCEC detectability resource.
 
-Large third-party raw files are not included. Accession identifiers and download instructions are recorded in `docs/DATA_ACCESSION_AUDIT.tsv`. The processed PXD054330 pivot and source tables may only be redistributed after author and repository-term review.
+Large third-party raw files are not included. Accession identifiers and download instructions are recorded in `docs/DATA_ACCESSION_AUDIT.tsv`. The processed PXD054330 pivot and source tables may only be redistributed after author and repository-term review; see `DATA_USE_NOTICE.md`.
 
 ## Required software
 
@@ -48,7 +48,7 @@ The C4 release audit is recorded in `docs/FINAL_REPRODUCIBILITY_SNAPSHOT.md`, `d
 
 ## License and citation
 
-The license is a placeholder until the authors choose terms compatible with the source datasets. Cite the manuscript and the original accession records; see `CITATION.cff`.
+Original code and documentation are released under the MIT License. Source accession data remain governed by their originating repositories; see `DATA_USE_NOTICE.md`. Cite the manuscript and the original accession records; see `CITATION.cff`.
 
 ## AI assistance disclosure
 
