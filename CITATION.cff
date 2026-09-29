@@ -6,7 +6,7 @@ abstract: "Frozen scripts and derived tables for a cross-study RNA-seq, ribosome
 date-released: 2026-09-29
 version: 1.0.2
 repository-code: "https://github.com/seefreewind/corneal-hyperosmotic-ribosome-proteome"
-doi: "VERIFY_AFTER_DEPOSIT"
+doi: "10.5281/zenodo.23048255"
 authors:
   - family-names: "Lin"
     given-names: "Da"
