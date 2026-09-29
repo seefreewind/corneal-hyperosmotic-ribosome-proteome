@@ -18,4 +18,4 @@ Raw third-party files are not redistributed. Accession identifiers in `docs/DATA
 
 ## Zenodo
 
-The v1.0.2 Zenodo DOI will be inserted after the deposit is created and independently verified.
+The v1.0.2 release is archived at https://doi.org/10.5281/zenodo.23048255. The all-versions concept DOI remains https://doi.org/10.5281/zenodo.22985907.
