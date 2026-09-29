@@ -1,0 +1,5 @@
+item	asset	source_data	check	status
+Figure 1	figures/jpr_final/FIGURE1_STUDY_ARCHITECTURE.png	figures/source_data/final/FIGURE1_SOURCE.tsv	main text Figure 1; source map present	PASS
+Figure 2	figures/jpr_final/FIGURE2_PRIMARY_ASSOCIATION.png	figures/source_data/final/FIGURE2_SOURCE.tsv	main text Figure 2; source map present	PASS
+Figure 3	figures/FIGURE3_C7B_FINAL.png/pdf	FIGURE3_SOURCE_C8.tsv; FIGURE3_PERMUTATION_NULL_C7B.tsv	C7B values, 3,966 genes, 10 repeats, B=10,000, b=0, displayed P < 1 × 10⁻⁴	PASS
+Figure 4	figures/jpr_final/FIGURE4_ROBUSTNESS_FOREST.png	figures/source_data/final/FIGURE4_SOURCE.tsv	main text Figure 4; source map present	PASS

@@ -1,6 +1,6 @@
 # Cross-study translational information in corneal epithelial hyperosmolarity
 
-This repository package contains the frozen computational workflow supporting the Journal of Proteome Research manuscript **“Ribosome-Level Responses Provide Incremental Information about Later Proteomic Remodeling during Corneal Epithelial Hyperosmotic Stress.”** It tests whether early ribosome-level changes contain incremental information about an independent later proteomic response beyond RNA-level changes.
+This repository package contains the frozen computational workflow supporting the manuscript **“Ribosome-Level Responses Provide Incremental Information about Later Proteomic Remodeling under Hyperosmotic Stress in Human Corneal Epithelial Models.”** It tests whether early ribosome-level changes contain incremental information about an independent later proteomic response beyond RNA-level changes.
 
 ## Study overview
 
@@ -40,9 +40,11 @@ python scripts/c2r_analysis.py
 
 Run the C1M audit before these commands. No raw DIA/RNA third-party files should be copied into this repository without permission.
 
-## Expected key outputs
+## Corrected v1.0.2 outputs
 
-The primary set is 3,974 genes, with 3,966 complete cases. Expected C2/C2R values are in `docs/EXPECTED_KEY_OUTPUTS.tsv`; the frozen random seeds are in `config/FINAL_RANDOM_SEEDS.yaml`.
+The primary set is 3,974 genes, with 3,966 complete cases. The corrected C7B release uses ten repeated 10-fold gene-level splits, complete out-of-fold aggregation within each repeat, and the formal statistic `T_REPEAT_OOF = mean(Δρr)`. Model A mean ρ is 0.10969, Model B mean ρ is 0.15012, and mean Δρ is 0.04042; all ten repeat-level increments are positive. The matched conditional residual-permutation null uses B = 10,000 and b = 0, giving formal P = 0.00009999000099990002, displayed as P < 1 × 10⁻⁴. The corrected outputs and source tables are in `results/c7b/`, `figures/`, and `figures_source/`.
+
+The observed and permuted statistics use identical repeat-level complete-OOF aggregation with training-only preprocessing. The correction harmonizes statistic definition only; it does not change the permutation design, datasets, genes, folds, seeds, thresholds, or primary paired-gene results. The detailed release audit is in `docs/release_v1.0.2/`.
 
 The C4 release audit is recorded in `docs/FINAL_REPRODUCIBILITY_SNAPSHOT.md`, `docs/FINAL_RESULT_CONSISTENCY_AUDIT.tsv`, `docs/FINAL_REFERENCE_AUDIT.tsv`, `docs/FINAL_ACCESSION_AUDIT.tsv`, `docs/FIGURE_SOURCE_DATA_AUDIT.tsv`, `docs/SI_FINAL_QC.tsv`, and `docs/PUBLIC_DATA_NOVELTY_PARAGRAPH.md`.
 
@@ -56,4 +58,4 @@ ChatGPT and DeepSeek were used to assist with code writing, language polishing, 
 
 ## Release status
 
-The public GitHub repository is https://github.com/seefreewind/corneal-hyperosmotic-ribosome-proteome. Release `v1.0.1` is archived in Zenodo at https://doi.org/10.5281/zenodo.22985978; the all-versions DOI is https://doi.org/10.5281/zenodo.22985907. No manuscript submission has been made.
+The public GitHub repository is https://github.com/seefreewind/corneal-hyperosmotic-ribosome-proteome. Release `v1.0.2` contains the corrected C7B outputs and is archived in Zenodo at `VERIFY_AFTER_DEPOSIT`; the all-versions DOI remains https://doi.org/10.5281/zenodo.22985907. The historical `v1.0.1` record is https://doi.org/10.5281/zenodo.22985978. No manuscript submission has been made.

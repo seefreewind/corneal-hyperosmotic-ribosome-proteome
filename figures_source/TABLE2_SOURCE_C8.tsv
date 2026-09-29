@@ -1,0 +1,6 @@
+Analysis	Estimate	95% CI	P	Interpretation
+RNA6 → Protein24	0.11348	0.08107–0.14571	<1 × 10⁻⁴	Modest cross-study association
+Ribo6 → Protein24	0.16326	0.13150–0.19493	<1 × 10⁻⁴	Modestly stronger association
+Paired Δρ (Ribo6 − RNA6)	0.04971	0.02377–0.07573	0.0002	Incremental rank information
+RNA-adjusted Ribo residual	0.11059	0.07799–0.14218	<1 × 10⁻⁴	Residual information retained
+RNA+Ribo vs RNA held-out-gene CV	Δρ = 0.04042	95% split-stability interval 0.03712–0.04408; 10/10 repeats positive	<1 × 10⁻⁴*	Incremental repeat-level OOF gene-space information

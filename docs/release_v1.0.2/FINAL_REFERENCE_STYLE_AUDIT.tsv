@@ -1,0 +1,7 @@
+check	observed	criterion	status
+count	14	14 expected references	PASS
+numbering	1,2,3,4,5,6,7,8,9,10,11,12,13,14	continuous 1–14	PASS
+metadata	journal/year/volume/pages/DOI	all reference entries contain journal/year/volume/pages and DOI	PASS
+duplicates	none detected	unique reference strings	PASS
+identifier style	PMID/PMCID absent	no mixed PMID/PMCID fields in C8 candidate	PASS
+DOI punctuation	single terminal period	no duplicated DOI periods	PASS

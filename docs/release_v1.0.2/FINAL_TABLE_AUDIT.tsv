@@ -1,0 +1,3 @@
+table	artifact	source_data	check	status
+Table 1	tables/final/TABLE1_DATASET_CHARACTERISTICS.docx	figures/source_data/final/TABLE1_SOURCE.tsv	dataset roles, sample sizes, accession labels, footnotes	PASS
+Table 2	tables/TABLE2_C8_FINAL.docx	figures/source_data/final/TABLE2_SOURCE_C8.tsv	C7B primary values; split-stability interval labeled; P display uses 10⁻⁴	PASS

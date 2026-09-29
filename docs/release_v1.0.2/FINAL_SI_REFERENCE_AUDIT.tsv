@@ -1,0 +1,7 @@
+check	observed	criterion	status
+SI sections	S1–S11	all section anchors present	PASS
+supplementary tables	Table S1–S14 referenced	S8 table inventory includes corrected C7B values	PASS
+supplementary figures	Figure S1–S11 inventory	S9 identifies Figure S11 C7B audit	PASS
+C7B CV	0.10969, 0.15012, 0.04042; 10 repeats	corrected repeat-level complete-OOF values	PASS
+old CV exclusion	0.11332/0.15260/0.03928 absent	retired statistic not in C8 SI	PASS
+reference identifiers	PMID/PMCID absent	consistent C8 reference style	PASS

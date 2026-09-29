@@ -3,10 +3,10 @@ message: "Cite the associated manuscript, this archived software release, and th
 title: "Ribosome-level information about later proteomic remodeling during corneal epithelial hyperosmotic stress"
 type: software
 abstract: "Frozen scripts and derived tables for a cross-study RNA-seq, ribosome-profiling, and proteomics analysis."
-date-released: 2026-09-27
-version: 1.0.1
+date-released: 2026-09-29
+version: 1.0.2
 repository-code: "https://github.com/seefreewind/corneal-hyperosmotic-ribosome-proteome"
-doi: "10.5281/zenodo.22985907"
+doi: "VERIFY_AFTER_DEPOSIT"
 authors:
   - family-names: "Lin"
     given-names: "Da"

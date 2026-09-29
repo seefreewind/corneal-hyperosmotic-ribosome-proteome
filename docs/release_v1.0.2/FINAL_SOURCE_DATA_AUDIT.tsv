@@ -1,0 +1,8 @@
+item	path	check	status
+Figure 1 source	figures_source/FIG1_SOURCE.tsv	exists	PASS
+Figure 2 source	figures_source/FIG2_SOURCE.tsv	exists	PASS
+Figure 3 source	figures_source/FIGURE3_SOURCE_C8.tsv	14015 data records; gene points and repeat/null records present	PASS
+Figure 3 null	figures_source/FIGURE3_PERMUTATION_NULL_C7B.tsv	10000 permutation records; B=10,000	PASS
+Table 2 source	figures_source/TABLE2_SOURCE_C8.tsv	C7B values and superscript P display	PASS
+SI repeat source	figures_source/SI_C7B_REPEAT_LEVEL_VALUES.tsv	10 repeat rows	PASS
+historical boundary	SOURCE_DATA_README_C8.md	retired historical files explicitly labeled	PASS

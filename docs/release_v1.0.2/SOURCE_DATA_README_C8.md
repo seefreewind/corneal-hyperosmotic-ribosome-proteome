@@ -1,0 +1,3 @@
+# C8 source data note
+
+The C8 submission candidate uses the C7B corrected source data. `FIGURE3_SOURCE_C8.tsv` is a typography-normalized copy of the frozen C7B Figure 3 source table; all numeric fields are unchanged. Figure 3C is derived from `results/c7b/CV_REPEAT_OOF_VALUES.tsv`; Figure 3D is derived from `results/c7b/PERMUTATION_NULL_UNIFIED.tsv`. Table 2 uses `TABLE2_SOURCE_C8.tsv`. The displayed CV P value is `P < 1 × 10⁻⁴`; the underlying formal value is recorded in the C7B audit files. Historical source files containing the retired fold-level statistic remain unchanged for reproducibility and are not formal C8 results.
