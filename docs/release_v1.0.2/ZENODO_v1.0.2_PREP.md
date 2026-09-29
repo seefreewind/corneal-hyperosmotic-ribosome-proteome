@@ -8,7 +8,9 @@ Status: **metadata prepared; upload not performed**
 - Correspondence: Yu Zhang, zhangyu1@wzhealth.com
 - Suggested license: preserve the license declared by the public repository; verify the exact SPDX identifier before deposit.
 - Related GitHub repository: https://github.com/seefreewind/corneal-hyperosmotic-ribosome
-- Existing Zenodo record: https://doi.org/10.5281/zenodo.22985978 (historical record; version/concept relationship must be verified on release).
+- Existing Zenodo record: https://doi.org/10.5281/zenodo.22985978 (historical v1.0.1 record).
+- Published v1.0.2 record: https://doi.org/10.5281/zenodo.23048255.
+- All-versions concept DOI: https://doi.org/10.5281/zenodo.22985907.
 - New DOI: `VERIFY_ON_RELEASE`
 
 Description: This release contains the corrected C7B repeat-level complete-OOF statistic, matched conditional residual-permutation null, derived results, final figures and source data, supporting-information audit records, and reproducibility metadata. The correction harmonizes aggregation of observed and permuted statistics; it does not change the permutation design, biological datasets, genes, folds, seeds, thresholds, or primary paired-gene results.
